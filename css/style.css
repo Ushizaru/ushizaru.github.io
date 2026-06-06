@@ -71,6 +71,8 @@ header {
   cursor: pointer;
   flex-direction: column;
   gap: 5px;
+  z-index: 1000;
+  position: relative;
 }
 
 .hamburger span {
@@ -410,6 +412,7 @@ footer {
   justify-content: center;
   gap: 1rem;
   margin-bottom: 3rem;
+  flex-wrap: wrap;
 }
 
 .tab-btn {
@@ -482,6 +485,14 @@ footer {
     gap: 1rem;
   }
 
+  .member-card h3 {
+    font-size: 1.05rem !important;
+  }
+
+  .member-card p {
+    font-size: 0.8rem !important;
+  }
+
   .nav-menu {
     position: fixed;
     top: 0;
@@ -493,6 +504,7 @@ footer {
     padding: 80px 2rem 2rem;
     border-left: 1px solid var(--border-color);
     transition: right 0.3s ease;
+    z-index: 999;
   }
 
   .nav-menu.active {
