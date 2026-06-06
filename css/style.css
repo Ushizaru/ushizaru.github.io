@@ -485,6 +485,10 @@ footer {
     gap: 1rem;
   }
 
+  .works-grid {
+    grid-template-columns: 1fr;
+  }
+
   .member-card h3 {
     font-size: 1.05rem !important;
   }
