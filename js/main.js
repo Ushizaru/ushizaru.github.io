@@ -81,4 +81,28 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+
+  // --- Works Tabs Feature ---
+  const tabBtns = document.querySelectorAll('.tab-btn');
+  const tabContents = document.querySelectorAll('.tab-content');
+
+  if (tabBtns.length > 0) {
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const targetId = btn.getAttribute('data-target');
+        // もし data-target が無いボタン（リンク等）ならタブ切り替え処理を行わずに通常のページ遷移をさせる
+        if (!targetId) return;
+
+        // 全てのタブとコンテンツからactiveを外す
+        tabBtns.forEach(b => {
+            if(b.getAttribute('data-target')) b.classList.remove('active');
+        });
+        tabContents.forEach(c => c.classList.remove('active'));
+
+        // クリックされたタブと対象のコンテンツにactiveを付ける
+        btn.classList.add('active');
+        document.getElementById(targetId).classList.add('active');
+      });
+    });
+  }
 });

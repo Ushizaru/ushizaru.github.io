@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ushizaru | AI Band 球体関節人類</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -18,7 +21,7 @@
         </div>
         <nav>
             <ul class="nav-menu">
-                <li><a href="index.html">Profile</a></li>
+                <li><a href="profile.html">Profile</a></li>
                 <li><a href="works.html">Portfolio</a></li>
                 <li><a href="band.html">AI BAND 球体関節人類</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -27,37 +30,319 @@
     </header>
 
     <main>
-        <h1 class="section-title">AI Band<br>「球体関節人類」</h1>
-        
-        <section class="band-hero">
-            <!-- 球体関節人類の画像をここに入れてね -->
-            <div class="band-image" style="background-image: url('https://via.placeholder.com/800x342'); background-size: cover; background-position: center;">
-            </div>
-            
-            <div class="band-concept">
-                <p style="font-size: 1.1rem; margin-bottom: 1rem; font-weight: 600;">Concept</p>
-                <p>「球体関節人類」は、最新のAI技術を用いて結成されたバーチャル・バンドです。</p>
-                <p>人間とAIの境界線を探求し、退廃的かつ美しい音楽とビジュアルで新しい世界観を表現します。</p>
-                <p>ここにより詳細なバンドの設定やメンバー紹介、ディスコグラフィーなどを追加できます。</p>
-            </div>
-        </section>
+        <h1 class="section-title">AI Band<br>球体関節人類</h1>
 
-        <!-- メンバー紹介などの追加セクション -->
-        <h2 style="margin-bottom: 1.5rem; text-align: center; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; max-width: 800px; margin-left: auto; margin-right: auto;">Members</h2>
-        <div style="max-width: 800px; margin: 0 auto; display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center;">
-            <!-- メンバー1 -->
-            <div style="text-align: center; width: 200px;">
-                <img src="https://via.placeholder.com/200x200" alt="Member 1" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover; margin-bottom: 1rem; background-color: #f0f0f0;">
-                <h3>Vocal: ???</h3>
-                <p style="font-size: 0.9rem; color: #666;">詳細プロフィール</p>
-            </div>
-            <!-- メンバー2 -->
-            <div style="text-align: center; width: 200px;">
-                <img src="https://via.placeholder.com/200x200" alt="Member 2" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover; margin-bottom: 1rem; background-color: #f0f0f0;">
-                <h3>Guitar: ???</h3>
-                <p style="font-size: 0.9rem; color: #666;">詳細プロフィール</p>
+        <!-- タブボタン -->
+        <div class="works-tabs" style="margin-top: 2rem;">
+            <button class="tab-btn active" data-target="tab-concept">Concept＆Members</button>
+            <button class="tab-btn" data-target="tab-band-mv">Band MV</button>
+            <button class="tab-btn" data-target="tab-solo-mv">Solo MV</button>
+            <button class="tab-btn" data-target="tab-discography">Discography</button>
+        </div>
+
+        <!-- Concept＆Members タブ -->
+        <div id="tab-concept" class="tab-content active">
+            <section class="band-hero">
+                <!-- 球体関節人類の画像をここに入れてね -->
+                <div class="band-image"
+                    style="background-image: url('img/band.png'); background-size: cover; background-position: center;">
+                </div>
+
+                <div class="band-concept">
+                    <p style="font-size: 1.1rem; margin-bottom: 1rem; font-weight: 600;">Concept</p>
+                    <p>ポップでヘヴィでキュートでクールな4人組ロックバンド、球体関節人類。</p>
+                    <p>踊り狂う言葉の渦と脳にブっ刺さるサウンドが、陰の情緒を陽の調べで歌い飛ばす。</p>
+                    <p>なんでもアリのゴチャ混ぜ世界！</p>
+                </div>
+            </section>
+
+            <!-- メンバー紹介などの追加セクション -->
+            <h2
+                style="margin-bottom: 1.5rem; text-align: center; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+                Members</h2>
+            <div class="members-grid">
+                <!-- メンバー1 -->
+                <div class="member-card">
+                    <img src="img/Vocal.png" alt="Vocal" class="member-image">
+                    <div style="font-size: 0.9rem; color: #666; font-weight: bold; margin-bottom: 0.3rem;">Vocal</div>
+                    <h3 style="margin-top: 0; margin-bottom: 0.5rem; font-size: 1.3rem;">
+                        <ruby>ぱんピ。<rt style="font-size: 0.6em; color: #999; font-weight: normal; letter-spacing: 1px;">
+                                Panpi.</rt></ruby>
+                    </h3>
+                    <p
+                        style="font-size: 0.9rem; color: #666; text-align: left; line-height: 1.6; display: inline-block; margin: 0 auto;">
+                        歌ったり叫んだり<br>
+                        酒＆酒＆飯＆酒<br>
+                        脱パンピー<br>
+                        Height：160cm
+                    </p>
+                </div>
+                <!-- メンバー2 -->
+                <div class="member-card">
+                    <img src="img/Guitar.png" alt="Guitar" class="member-image">
+                    <div style="font-size: 0.9rem; color: #666; font-weight: bold; margin-bottom: 0.3rem;">Guitar＆Vocal
+                    </div>
+                    <h3 style="margin-top: 0; margin-bottom: 0.5rem; font-size: 1.3rem;">
+                        <ruby>陽十陰 鞭飴<rt
+                                style="font-size: 0.6em; color: #999; font-weight: normal; letter-spacing: 1px;">
+                                Hijuuin Muchame
+                            </rt></ruby>
+                    </h3>
+                    <p
+                        style="font-size: 0.9rem; color: #666; text-align: left; line-height: 1.6; display: inline-block; margin: 0 auto;">
+                        バンドリーダー<br>
+                        激烈甘党<br>
+                        昔も良かった系人類<br>
+                        Height：172cm
+                    </p>
+                </div>
+                <!-- メンバー3 -->
+                <div class="member-card">
+                    <img src="img/Bass.png" alt="Bass" class="member-image">
+                    <div style="font-size: 0.9rem; color: #666; font-weight: bold; margin-bottom: 0.3rem;">Bass</div>
+                    <h3 style="margin-top: 0; margin-bottom: 0.5rem; font-size: 1.3rem;">
+                        <ruby>モル子・盛る己NG<rt
+                                style="font-size: 0.6em; color: #999; font-weight: normal; letter-spacing: 1px;">
+                                Moruko・Morukong
+                            </rt></ruby>
+                    </h3>
+                    <p
+                        style="font-size: 0.9rem; color: #666; text-align: left; line-height: 1.6; display: inline-block; margin: 0 auto;">
+                        神秘担当<br>
+                        化学の子<br>
+                        盛り過ぎ厳禁<br>
+                        Height：169cm
+                    </p>
+                </div>
+                <!-- メンバー4 -->
+                <div class="member-card">
+                    <img src="img/Drums.png" alt="Drums" class="member-image">
+                    <div style="font-size: 0.9rem; color: #666; font-weight: bold; margin-bottom: 0.3rem;">Drums</div>
+                    <h3 style="margin-top: 0; margin-bottom: 0.5rem; font-size: 1.3rem;">
+                        <ruby>YUKARIちゃん<rt
+                                style="font-size: 0.6em; color: #999; font-weight: normal; letter-spacing: 1px;">
+                                YUKARI-chan
+                            </rt></ruby>
+                    </h3>
+                    <p
+                        style="font-size: 0.9rem; color: #666; text-align: left; line-height: 1.6; display: inline-block; margin: 0 auto;">
+                        最年少担当<br>
+                        ゲーム大好き<br>
+                        常にPC電源ONな生活<br>
+                        Height：156cm
+                    </p>
+                </div>
             </div>
         </div>
+
+        <!-- Band MV タブ -->
+        <div id="tab-band-mv" class="tab-content">
+            <h2
+                style="margin-bottom: 1.5rem; text-align: center; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+                Band MV
+            </h2>
+            <div class="works-grid" style="margin-bottom: 4rem;">
+                <!-- 1 -->
+                <div class="work-item">
+                    <div class="latest-badge">LATEST</div>
+                    <div class="youtube-thumbnail" data-video-id="E4r0-ktwaiE"></div>
+                    <h3 class="work-title" style="margin-top: 1rem; font-size: 1.1rem;">LEUCISM</h3>
+                </div>
+                <!-- 2 -->
+                <div class="work-item">
+                    <div class="youtube-thumbnail" data-video-id="lj90clzRVlk"></div>
+                    <h3 class="work-title" style="margin-top: 1rem; font-size: 1.1rem;">夕辱晒し</h3>
+                </div>
+                <!-- 3 -->
+                <div class="work-item">
+                    <div class="youtube-thumbnail" data-video-id="AKvztmyL7lQ"></div>
+                    <h3 class="work-title" style="margin-top: 1rem; font-size: 1.1rem;">真理 on ネット-MARIONETTE- Live
+                        ver</h3>
+                </div>
+                <!-- 4 -->
+                <div class="work-item">
+                    <div class="youtube-thumbnail" data-video-id="7z_bVMbMSkY"></div>
+                    <h3 class="work-title" style="margin-top: 1rem; font-size: 1.1rem;">金切心中反吐咲百景娯身転生</h3>
+                </div>
+                <!-- 5 -->
+                <div class="work-item">
+                    <div class="youtube-thumbnail" data-video-id="CxeiDDTMzu4"></div>
+                    <h3 class="work-title" style="margin-top: 1rem; font-size: 1.1rem;">理想郷中毒</h3>
+                </div>
+                <!-- 6 -->
+                <div class="work-item">
+                    <div class="youtube-thumbnail" data-video-id="qsTCOi7Ie20"></div>
+                    <h3 class="work-title" style="margin-top: 1rem; font-size: 1.1rem;">ロンジテ・アンガーロジック</h3>
+                </div>
+                <!-- 7 -->
+                <div class="work-item">
+                    <div class="youtube-thumbnail" data-video-id="27Et01QdaZ0"></div>
+                    <h3 class="work-title" style="margin-top: 1rem; font-size: 1.1rem;">染幸抗幸</h3>
+                </div>
+                <!-- 8 -->
+                <div class="work-item">
+                    <div class="youtube-thumbnail" data-video-id="pUdSDhgJJxk"></div>
+                    <h3 class="work-title" style="margin-top: 1rem; font-size: 1.1rem;">水とサイダー。</h3>
+                </div>
+                <!-- 9 -->
+                <div class="work-item">
+                    <div class="youtube-thumbnail" data-video-id="qEmxkUplVJE"></div>
+                    <h3 class="work-title" style="margin-top: 1rem; font-size: 1.1rem;">虚無っち</h3>
+                </div>
+                <!-- 10 -->
+                <div class="work-item">
+                    <div class="youtube-thumbnail" data-video-id="flZ5TppDbv8"></div>
+                    <h3 class="work-title" style="margin-top: 1rem; font-size: 1.1rem;">TOKYO百連葬</h3>
+                </div>
+                <!-- 11 -->
+                <div class="work-item">
+                    <div class="youtube-thumbnail" data-video-id="aQLSv_ZT2CM"></div>
+                    <h3 class="work-title" style="margin-top: 1rem; font-size: 1.1rem;">FACIAL SADISM</h3>
+                </div>
+                <!-- 12 -->
+                <div class="work-item">
+                    <div class="youtube-thumbnail" data-video-id="zBiKCivqgqY"></div>
+                    <h3 class="work-title" style="margin-top: 1rem; font-size: 1.1rem;">弩・ドールハウス</h3>
+                </div>
+                <!-- 13 -->
+                <div class="work-item">
+                    <div class="youtube-thumbnail" data-video-id="CE_X6Upo-Lg"></div>
+                    <h3 class="work-title" style="margin-top: 1rem; font-size: 1.1rem;">真理 on ネット-MARIONETTE-</h3>
+                </div>
+                <!-- 14 -->
+                <div class="work-item">
+                    <div class="youtube-thumbnail" data-video-id="Fg58PLaucBs"></div>
+                    <h3 class="work-title" style="margin-top: 1rem; font-size: 1.1rem;">天棄予報</h3>
+                </div>
+                <!-- 15 -->
+                <div class="work-item">
+                    <div class="youtube-thumbnail" data-video-id="m--IU5EXL2I"></div>
+                    <h3 class="work-title" style="margin-top: 1rem; font-size: 1.1rem;">好Kick！</h3>
+                </div>
+                <!-- 16 -->
+                <div class="work-item">
+                    <div class="youtube-thumbnail" data-video-id="s--e0oDsD2E"></div>
+                    <h3 class="work-title" style="margin-top: 1rem; font-size: 1.1rem;">公然加虐DISGUST</h3>
+                </div>
+                <!-- 17 -->
+                <div class="work-item">
+                    <div class="youtube-thumbnail" data-video-id="Iwad5uvwRS4"></div>
+                    <h3 class="work-title" style="margin-top: 1rem; font-size: 1.1rem;">幸害</h3>
+                </div>
+                <!-- 18 -->
+                <div class="work-item">
+                    <div class="youtube-thumbnail" data-video-id="NyTBk6dZ0Lc"></div>
+                    <h3 class="work-title" style="margin-top: 1rem; font-size: 1.1rem;">ハッピー♡パピルス攻撃</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Solo MV タブ -->
+        <div id="tab-solo-mv" class="tab-content">
+            <h2
+                style="margin-bottom: 1.5rem; text-align: center; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+                Solo MV
+            </h2>
+            <div class="works-grid" style="margin-bottom: 4rem;">
+                <!-- 1 -->
+                <div class="work-item">
+                    <div class="latest-badge">LATEST</div>
+                    <div class="youtube-thumbnail" data-video-id="PFSzWEXIK48"></div>
+                    <h3 class="work-title" style="margin-top: 1rem; font-size: 1.1rem;">介錯異っ血♡えくすキュン死ょなー！！</h3>
+                </div>
+                <!-- 2 -->
+                <div class="work-item">
+                    <div class="youtube-thumbnail" data-video-id="9FZiJ4tY6hM"></div>
+                    <h3 class="work-title" style="margin-top: 1rem; font-size: 1.1rem;">暴きゅん♡他愛乱闘</h3>
+                </div>
+                <!-- 3 -->
+                <div class="work-item">
+                    <div class="youtube-thumbnail" data-video-id="NsWInCoyZQw"></div>
+                    <h3 class="work-title" style="margin-top: 1rem; font-size: 1.1rem;">疑次元sin世界</h3>
+                </div>
+                <!-- 4 -->
+                <div class="work-item">
+                    <div class="youtube-thumbnail" data-video-id="GPgui5dxl4E"></div>
+                    <h3 class="work-title" style="margin-top: 1rem; font-size: 1.1rem;">VESWIANIA</h3>
+                </div>
+                <!-- 5 -->
+                <div class="work-item">
+                    <div class="youtube-thumbnail" data-video-id="AJ6N-JhRSpk"></div>
+                    <h3 class="work-title" style="margin-top: 1rem; font-size: 1.1rem;">斑に薄紅</h3>
+                </div>
+                <!-- 6 -->
+                <div class="work-item">
+                    <div class="youtube-thumbnail" data-video-id="ukobfkgOa4o"></div>
+                    <h3 class="work-title" style="margin-top: 1rem; font-size: 1.1rem;">やみしゅき♡堕chu獄♡ぶろっく</h3>
+                </div>
+                <!-- 7 -->
+                <div class="work-item">
+                    <div class="youtube-thumbnail" data-video-id="N46IPtscfzo"></div>
+                    <h3 class="work-title" style="margin-top: 1rem; font-size: 1.1rem;">仮想エネミーネブライザー</h3>
+                </div>
+                <!-- 8 -->
+                <div class="work-item">
+                    <div class="youtube-thumbnail" data-video-id="A8GAvv8Zxw0"></div>
+                    <h3 class="work-title" style="margin-top: 1rem; font-size: 1.1rem;">NETHIS SHRAGOR</h3>
+                </div>
+                <!-- 9 -->
+                <div class="work-item">
+                    <div class="youtube-thumbnail" data-video-id="DgG_gHiGgDU"></div>
+                    <h3 class="work-title" style="margin-top: 1rem; font-size: 1.1rem;">鋼、幻に鳴り</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Discography タブ -->
+        <div id="tab-discography" class="tab-content">
+            <h2
+                style="margin-bottom: 1.5rem; text-align: center; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+                Discography
+            </h2>
+            
+            <div style="max-width: 800px; margin: 0 auto 2rem auto; display: flex; flex-wrap: wrap; gap: 3rem; align-items: stretch;">
+                <!-- 左側：ジャケット画像 -->
+                <div style="flex: 1 1 300px; text-align: center; display: flex; align-items: center; justify-content: center;">
+                    <img src="img/1st_album.png" alt="1st Album 球体関節世界" style="width: 100%; max-width: 350px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+                </div>
+                
+                <!-- 右側：アルバム情報 -->
+                <div style="flex: 1 1 300px; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div style="font-weight: bold; color: var(--accent-color); margin-bottom: 0.3rem; letter-spacing: 1px; font-size: 0.9rem;">1st Digital Album</div>
+                        <h3 style="font-size: 1.8rem; margin-top: 0; margin-bottom: 0.8rem;">球体関節世界</h3>
+                        <h4 style="font-size: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.2rem; margin-bottom: 0.5rem; margin-top: 0;">Track List</h4>
+                    </div>
+                    
+                    <ol style="padding-left: 1.5rem; margin: 0; font-size: 0.95rem; color: var(--text-color); display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1;">
+                        <li>真理 on ネット-MARIONETTE-</li>
+                        <li>弩・ドールハウス</li>
+                        <li>FACIAL SADISM</li>
+                        <li>虚無っち</li>
+                        <li>公然加虐DISGUST</li>
+                        <li>幸害</li>
+                        <li>ハッピー♡パピルス攻撃</li>
+                        <li>染幸抗幸</li>
+                        <li>TOKYO百連葬</li>
+                        <li>好Kick！</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Streaming リンク -->
+            <div style="max-width: 800px; margin: 0 auto 4rem auto; text-align: center;">
+                <h4 style="font-size: 1.1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.3rem; margin-bottom: 1.5rem; display: inline-block; padding-left: 2rem; padding-right: 2rem;">Streaming</h4>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+                    <a href="https://open.spotify.com/intl-ja/album/6JpX0TifDJqMHod8PRJI2B" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.5rem; background: #1DB954; color: white; padding: 0.8rem 1.5rem; border-radius: 30px; text-decoration: none; font-weight: bold; transition: opacity 0.3s; cursor: pointer;">
+                        <i class="fa-brands fa-spotify" style="font-size: 1.2rem;"></i> Spotify
+                    </a>
+                    <a href="https://music.apple.com/au/album/%E7%90%83%E4%BD%93%E9%96%A2%E7%AF%80%E4%B8%96%E7%95%8C/1853842646" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.5rem; background: #FA243C; color: white; padding: 0.8rem 1.5rem; border-radius: 30px; text-decoration: none; font-weight: bold; transition: opacity 0.3s; cursor: pointer;">
+                        <i class="fa-brands fa-apple" style="font-size: 1.2rem;"></i> Apple Music
+                    </a>
+                </div>
+            </div>
+        </div>
+
     </main>
 
     <footer>
@@ -66,4 +351,5 @@
 
     <script src="js/main.js"></script>
 </body>
+
 </html>
