@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ushizaru | Contact</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -18,7 +21,7 @@
         </div>
         <nav>
             <ul class="nav-menu">
-                <li><a href="index.html">Profile</a></li>
+                <li><a href="profile.html">Profile</a></li>
                 <li><a href="works.html">Portfolio</a></li>
                 <li><a href="band.html">AI BAND 球体関節人類</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -28,36 +31,33 @@
 
     <main>
         <h1 class="section-title">Contact</h1>
-        
-        <div class="contact-container">
-            <p style="text-align: center; margin-bottom: 2rem;">ご依頼やお問い合わせ、感想などは以下のフォームまたはSNSからお気軽にどうぞ。</p>
 
-            <!-- 各種SNSリンク -->
-            <div class="sns-links">
-                <!-- 実際のSNSリンク（URL）に書き換えてね -->
-                <a href="#" target="_blank">X (Twitter)</a>
-                <a href="#" target="_blank">YouTube</a>
-                <a href="#" target="_blank">Instagram</a>
-                <a href="#" target="_blank">note</a>
+        <div class="contact-container" style="max-width: 600px; margin: 0 auto; text-align: center;">
+            <p style="margin-bottom: 3rem; color: var(--text-color); line-height: 1.8;">
+                お問い合わせや各種活動のチェックは<br>以下のリンクからお気軽にどうぞ。
+            </p>
+
+            <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-bottom: 4rem;">
+                <a href="https://x.com/Ushizaru_LAB" target="_blank" rel="noopener noreferrer"
+                    style="display: flex; align-items: center; justify-content: center; gap: 1rem; background-color: var(--accent-color); color: var(--bg-color); padding: 1.2rem; border-radius: 8px; text-decoration: none; font-size: 1.2rem; font-weight: bold; transition: opacity 0.3s;">
+                    <i class="fa-brands fa-x-twitter" style="font-size: 1.5rem;"></i> X (Twitter)
+                </a>
+
+                <a href="https://www.youtube.com/@Ushizaru-il2sw" target="_blank" rel="noopener noreferrer"
+                    style="display: flex; align-items: center; justify-content: center; gap: 1rem; background-color: #FF0000; color: white; padding: 1.2rem; border-radius: 8px; text-decoration: none; font-size: 1.2rem; font-weight: bold; transition: opacity 0.3s;">
+                    <i class="fa-brands fa-youtube" style="font-size: 1.5rem;"></i> YouTube
+                </a>
+
+                <a href="https://substack.com/@ushizaru" target="_blank" rel="noopener noreferrer"
+                    style="display: flex; align-items: center; justify-content: center; gap: 1rem; background-color: #FF6719; color: white; padding: 1.2rem; border-radius: 8px; text-decoration: none; font-size: 1.2rem; font-weight: bold; transition: opacity 0.3s;">
+                    <i class="fa-solid fa-pen-nib" style="font-size: 1.5rem;"></i> Substack
+                </a>
+
+                <a href="mailto:ushizaruai@gmail.com"
+                    style="display: flex; align-items: center; justify-content: center; gap: 1rem; background-color: #333; color: white; padding: 1.2rem; border-radius: 8px; text-decoration: none; font-size: 1.2rem; font-weight: bold; transition: opacity 0.3s;">
+                    <i class="fa-solid fa-envelope" style="font-size: 1.5rem;"></i> ushizaruai@gmail.com
+                </a>
             </div>
-
-            <!-- メールフォーム（現在は見た目のみ） -->
-            <!-- 最後に「Formspree」などのURLを action="ここ" に設定すると本当に送れるようになります -->
-            <form id="contactForm" action="#" method="POST">
-                <div class="form-group">
-                    <label for="name">お名前</label>
-                    <input type="text" id="name" name="name" required placeholder="山田 太郎">
-                </div>
-                <div class="form-group">
-                    <label for="email">メールアドレス</label>
-                    <input type="email" id="email" name="email" required placeholder="example@email.com">
-                </div>
-                <div class="form-group">
-                    <label for="message">お問い合わせ内容</label>
-                    <textarea id="message" name="message" required placeholder="こちらにメッセージをご記入ください。"></textarea>
-                </div>
-                <button type="submit" class="submit-btn">送信する</button>
-            </form>
         </div>
     </main>
 
@@ -67,4 +67,5 @@
 
     <script src="js/main.js"></script>
 </body>
+
 </html>

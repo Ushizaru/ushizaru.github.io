@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Noto+Sans+JP:wght@400;500;700&display=swap');
 
 :root {
   --bg-color: #ffffff;
@@ -15,11 +15,12 @@
 }
 
 body {
-  font-family: 'Inter', 'Noto Sans JP', sans-serif;
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "Noto Sans JP", sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
   line-height: 1.6;
   font-size: 16px;
+  letter-spacing: 0.05em;
 }
 
 a {
@@ -162,6 +163,23 @@ main {
   padding: 1rem;
   border-radius: 4px;
   transition: transform 0.3s ease;
+  position: relative;
+}
+
+.latest-badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background-color: #e60012;
+  color: #fff;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 4px 0 8px 0;
+  z-index: 10;
+  pointer-events: none;
+  letter-spacing: 1px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
 }
 
 .work-item:hover {
@@ -386,10 +404,82 @@ footer {
   color: #666;
 }
 
+/* Works Tabs */
+.works-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.tab-btn {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: 2px solid var(--text-color);
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-btn:hover {
+  background-color: var(--hover-color);
+  color: var(--bg-color);
+  border-color: var(--hover-color);
+}
+
+.tab-btn.active {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Band Members Grid */
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.member-card {
+  text-align: center;
+}
+
+.member-image {
+  width: 100%;
+  aspect-ratio: 2/3;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.8rem;
+  background-color: #f0f0f0;
+}
+
 /* Responsive Design */
 @media screen and (max-width: 768px) {
   .hamburger {
     display: flex;
+  }
+
+  .members-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
 
   .nav-menu {

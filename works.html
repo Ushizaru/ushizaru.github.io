@@ -21,7 +21,7 @@
         </div>
         <nav>
             <ul class="nav-menu">
-                <li><a href="index.html">Profile</a></li>
+                <li><a href="profile.html">Profile</a></li>
                 <li><a href="works.html">Portfolio</a></li>
                 <li><a href="band.html">AI BAND 球体関節人類</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -32,79 +32,93 @@
     <main>
         <h1 class="section-title">Portfolio</h1>
 
-        <p style="text-align: center; margin-bottom: 3rem;">これまでに制作したコンテスト作品や、その他映像作品です。バンドMVに関しては「AI BAND
-            球体関節人類」のページをご覧ください。</p>
+        <p style="text-align: center; margin-bottom: 3rem;">これまでに制作した作品達です。</p>
+
+        <!-- タブボタン -->
+        <div class="works-tabs">
+            <button class="tab-btn active" data-target="tab-contest">コンテスト作品</button>
+            <a href="band.html" class="tab-btn">AI BAND 球体関節人類</a>
+            <button class="tab-btn" data-target="tab-single">AI BAND以外の作品</button>
+        </div>
 
         <!-- コンテスト作品セクション -->
-        <h2 style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">コンテスト作品
-        </h2>
-        <div class="works-grid" style="margin-bottom: 4rem;">
-            <!-- 作品アイテム1 -->
-            <div class="work-item">
-                <div class="contest-info" style="margin-bottom: 1rem; font-weight: bold;">
-                    <div>くりえみAIフィルムコンテスト(2026)</div>
-                    <div>ショートフィルム部門 ノミネート</div>
+        <div id="tab-contest" class="tab-content active">
+            <h2 style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">
+                コンテスト作品
+            </h2>
+            <div class="works-grid" style="margin-bottom: 4rem;">
+                <!-- 作品アイテム1 -->
+                <div class="work-item">
+                    <div class="contest-info" style="margin-bottom: 1rem; font-weight: bold;">
+                        <div>くりえみAIフィルムコンテスト(2026)</div>
+                        <div>ショートフィルム部門 ノミネート</div>
+                    </div>
+                    <div class="youtube-thumbnail" data-video-id="ZA1Lkp-TuNQ"></div>
+                    <h3 class="work-title">The Moment I Create</h3>
                 </div>
-                <div class="youtube-thumbnail" data-video-id="ZA1Lkp-TuNQ"></div>
-                <h3 class="work-title">The Moment I Create</h3>
-            </div>
-            <!-- 作品アイテム2 -->
-            <div class="work-item">
-                <div class="contest-info" style="margin-bottom: 1rem; font-weight: bold;">
-                    <div>SousakuAI Christmas Creation Cup(2025)</div>
-                    <div>グランプリ</div>
+                <!-- 作品アイテム2 -->
+                <div class="work-item">
+                    <div class="contest-info" style="margin-bottom: 1rem; font-weight: bold;">
+                        <div>SousakuAI Christmas Creation Cup(2025)</div>
+                        <div>グランプリ</div>
+                    </div>
+                    <div class="youtube-thumbnail" data-video-id="93EjeknPI4g"></div>
+                    <h3 class="work-title">TOKYOギガクリスマス</h3>
                 </div>
-                <div class="youtube-thumbnail" data-video-id="93EjeknPI4g"></div>
-                <h3 class="work-title">TOKYOギガクリスマス</h3>
-            </div>
-            <!-- 作品アイテム3 -->
-            <div class="work-item">
-                <div class="contest-info" style="margin-bottom: 1rem; font-weight: bold;">
-                    <div>AI日本国際映画祭(2025)</div>
-                    <div>セレクション(上映選出)</div>
+                <!-- 作品アイテム3 -->
+                <div class="work-item">
+                    <div class="contest-info" style="margin-bottom: 1rem; font-weight: bold;">
+                        <div>AI日本国際映画祭(2025)</div>
+                        <div>セレクション(上映選出)</div>
+                    </div>
+                    <div class="youtube-thumbnail" data-video-id="GPgui5dxl4E"></div>
+                    <h3 class="work-title">VESWIANIA</h3>
                 </div>
-                <div class="youtube-thumbnail" data-video-id="GPgui5dxl4E"></div>
-                <h3 class="work-title">VESWIANIA</h3>
-            </div>
-            <!-- 作品アイテム4 -->
-            <div class="work-item">
-                <div class="contest-info" style="margin-bottom: 1rem; font-weight: bold;">
-                    <div>DomoAI AI動画コンテスト(2025)</div>
-                    <div>MV部門 優秀賞</div>
+                <!-- 作品アイテム4 -->
+                <div class="work-item">
+                    <div class="contest-info" style="margin-bottom: 1rem; font-weight: bold;">
+                        <div>DomoAI AI動画コンテスト(2025)</div>
+                        <div>MV部門 優秀賞</div>
+                    </div>
+                    <div class="youtube-thumbnail" data-video-id="EMYQpYGo9-A"></div>
+                    <h3 class="work-title">USHIZARIC LINK</h3>
                 </div>
-                <div class="youtube-thumbnail" data-video-id="EMYQpYGo9-A"></div>
-                <h3 class="work-title">USHIZARIC LINK</h3>
             </div>
         </div>
 
         <!-- その他単発作品セクション -->
-        <h2 style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">その他単発作品
-        </h2>
-        <div class="works-grid">
-            <!-- 作品アイテム3 -->
-            <div class="work-item">
-                <div class="work-placeholder"
-                    style="background-image: url('https://via.placeholder.com/600x338'); background-size: cover; background-position: center;">
+        <div id="tab-single" class="tab-content">
+            <h2 style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">
+                AI BAND以外の作品
+            </h2>
+            <div class="works-grid">
+                <!-- 作品アイテム1 -->
+                <div class="work-item">
+                    <div class="youtube-thumbnail" data-video-id="SJeLGQRXrcI"></div>
+                    <h3 class="work-title">Mirroring Neoteny</h3>
                 </div>
-                <h3 class="work-title">テストミュージック01</h3>
-                <p class="work-desc">AI作曲のテストとして制作したインストゥルメンタル楽曲。</p>
-            </div>
-            <!-- 作品アイテム4 -->
-            <div class="work-item">
-                <div class="work-placeholder"
-                    style="background-image: url('https://via.placeholder.com/600x338'); background-size: cover; background-position: center;">
+                <!-- 作品アイテム2 -->
+                <div class="work-item">
+                    <div class="youtube-thumbnail" data-video-id="DjVafXK6kUQ"></div>
+                    <h3 class="work-title">Hyper Nostalgia</h3>
                 </div>
-                <h3 class="work-title">ジェネレーティブアート</h3>
-                <p class="work-desc">日々の生成実験から生まれたお気に入りの1枚。</p>
-            </div>
-            <!-- 作品アイテム5 -->
-            <div class="work-item">
-                <div class="work-placeholder"
-                    style="background-image: url('https://via.placeholder.com/600x338'); background-size: cover; background-position: center;">
+                <!-- 作品アイテム3 -->
+                <div class="work-item">
+                    <div class="youtube-thumbnail" data-video-id="nUnDOQZjf30"></div>
+                    <h3 class="work-title">SUGAR</h3>
                 </div>
-                <h3 class="work-title">ミュージックビデオ</h3>
-                <p class="work-desc">ショート動画用に制作したMV。</p>
+                <!-- 作品アイテム4 -->
+                <div class="work-item">
+                    <div class="youtube-thumbnail" data-video-id="o_fYtbeSkAM"></div>
+                    <h3 class="work-title">MIHIRAKU</h3>
+                </div>
+                <!-- 作品アイテム5 -->
+                <div class="work-item">
+                    <div class="youtube-thumbnail" data-video-id="ecCjnkkrZx4"></div>
+                    <h3 class="work-title">航る世界は勝ちばかり</h3>
+                </div>
             </div>
+        </div>
         </div>
     </main>
 
