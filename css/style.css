@@ -33,6 +33,16 @@ a:hover {
   color: var(--hover-color);
 }
 
+:focus-visible {
+  outline: 3px solid #ffcc00;
+  outline-offset: 3px;
+}
+
+body.menu-open,
+body.modal-open {
+  overflow: hidden;
+}
+
 /* Header & Navigation */
 header {
   padding: 2rem 5%;
@@ -73,6 +83,10 @@ header {
   gap: 5px;
   z-index: 1000;
   position: relative;
+}
+
+.hamburger:focus-visible {
+  border-radius: 2px;
 }
 
 .hamburger span {
@@ -150,6 +164,11 @@ main {
   position: absolute;
   left: 0;
   color: var(--hover-color);
+}
+
+.achievement-list .award-compact {
+  letter-spacing: 0.02em;
+  white-space: nowrap;
 }
 
 /* Works Gallery */
@@ -447,9 +466,24 @@ footer {
   animation: fadeIn 0.5s ease;
 }
 
+.tab-content[hidden] {
+  display: none;
+}
+
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
 }
 
 /* Band Members Grid */
@@ -467,6 +501,7 @@ footer {
 
 .member-image {
   width: 100%;
+  height: auto;
   aspect-ratio: 2/3;
   object-fit: cover;
   border-radius: 8px;
@@ -476,6 +511,10 @@ footer {
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
+  .achievement-list .award-compact {
+    white-space: normal;
+  }
+
   .hamburger {
     display: flex;
   }
