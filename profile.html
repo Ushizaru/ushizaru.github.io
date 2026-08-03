@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AIクリエイターUshizaruのプロフィール、受賞歴、制作環境を紹介。">
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Profile | Ushizaru">
+    <meta property="og:description" content="AIを活用した音楽・画像・映像制作を行うUshizaruのプロフィール。">
+    <meta name="twitter:card" content="summary">
     <title>Ushizaru | Profile</title>
     <link rel="icon" href="img/profile.jpg">
     <link rel="apple-touch-icon" href="img/profile.jpg">
@@ -17,14 +22,14 @@
         <div class="logo">
             <a href="index.html">Ushizaru</a>
         </div>
-        <div class="hamburger">
+        <div class="hamburger" role="button" tabindex="0" aria-label="メニューを開く" aria-expanded="false" aria-controls="global-navigation">
             <span></span>
             <span></span>
             <span></span>
         </div>
-        <nav>
+        <nav id="global-navigation" aria-label="メインナビゲーション">
             <ul class="nav-menu">
-                <li><a href="profile.html">Profile</a></li>
+                <li><a href="profile.html" aria-current="page">Profile</a></li>
                 <li><a href="works.html">Portfolio</a></li>
                 <li><a href="band.html">AI BAND 球体関節人類</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -38,7 +43,7 @@
         <section class="profile-section">
             <div class="profile-image">
                 <!-- プロフィール画像のパスをここに入れてね (例: src="img/profile.jpg") -->
-                <img src="img/profile.jpg" alt="Ushizaru Profile Image">
+                <img src="img/profile.jpg" alt="Ushizaruのプロフィール写真" width="512" height="512" decoding="async">
             </div>
 
             <div class="profile-info">
@@ -52,11 +57,12 @@
                 <h3>Awards</h3>
                 <ul class="achievement-list" style="margin-bottom: 2rem;">
                     <!-- 新しい実績はこの下に追加していってね -->
+                    <li>2026年 AI Fusion Fes 動画コンテスト / 入選</li>
                     <li>2026年 Kling AI 2周年お祝いチャレンジ / 最優秀MV賞</li>
-                    <li>2026年 くりえみAIフィルムコンテスト / ショートフィルム部門 ノミネート</li>
+                    <li class="award-compact">2026年 くりえみAIフィルムコンテスト / ショートフィルム部門ノミネート</li>
                     <li>2025年 SousakuAI Christmas Creation Cup / グランプリ</li>
                     <li>2025年 AI日本国際映画祭 / セレクション(上映選出)</li>
-                    <li>2025年 DomoAI AI動画コンテスト / MV部門 優秀賞</li>
+                    <li>2025年 DomoAI AI動画コンテスト / MV部門優秀賞</li>
                 </ul>
 
                 <h3>Creative Partners</h3>
@@ -67,8 +73,7 @@
 
                 <h3>主な使用ツール</h3>
                 <div style="margin-bottom: 2rem; line-height: 1.8;">
-                    <p>Suno, Midjourney, niji・journey, Krea, nanobanana, chatGPTimage, Hailuo, Kling, Seedance, Vidu,
-                        Higgsfield 等</p>
+                    <p>Suno, Midjourney, Krea, nanobanana, chatGPTimage, Hailuo, Kling, Seedance 等</p>
                 </div>
             </div>
         </section>
