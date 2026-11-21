@@ -348,6 +348,11 @@ main {
   opacity: 1;
 }
 
+/* 縦動画も一覧では同じ16:9枠に収め、サムネイル全体を表示する */
+.youtube-thumbnail-portrait img {
+  object-fit: contain;
+}
+
 /* Play Icon Overlay */
 .youtube-thumbnail::after {
   content: '\f144'; /* FontAwesome play-circle icon */
@@ -399,6 +404,13 @@ main {
   width: 100%;
   height: 100%;
   border-radius: 8px;
+}
+
+/* 縦動画は画面の高さと閉じるボタンの余白を確保して表示する */
+.video-modal-portrait .video-modal-content {
+  width: min(90vw, 420px, calc((100vh - 96px) * 0.5625));
+  width: min(90vw, 420px, calc((100dvh - 96px) * 0.5625));
+  aspect-ratio: 9/16;
 }
 
 .video-modal-close {

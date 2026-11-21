@@ -67,6 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 閉じる処理 (iframeごと削除して再生を止める)
     const closeModal = () => {
       modal.classList.remove('active');
+      modal.classList.remove('video-modal-portrait');
       modal.setAttribute('aria-hidden', 'true');
       container.innerHTML = '';
       document.body.classList.remove('modal-open');
@@ -106,6 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // クリックでモーダル表示＆iframe挿入（自動再生）
       const openModal = () => {
         lastFocusedElement = thumb;
+        modal.classList.toggle('video-modal-portrait', thumb.getAttribute('data-video-format') === 'portrait');
         container.innerHTML = `<iframe src="https://www.youtube.com/embed/${videoId}?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
         modal.classList.add('active');
         modal.setAttribute('aria-hidden', 'false');
